@@ -2,6 +2,22 @@
 
 Traveller is a navigation on tourism related aspects of Sri Lanka. 
 
+## Pre-requisites
+
+### Setup Mamba environment
+
+```bash
+mamba create -n traveller_env python=3.9
+```
+
+```bash
+mamba install pandas python-dotenv django psycopg2-binary
+```
+
+### Login to the Neon PostgreSQL database
+
+https://console.neon.tech/
+
 ## Data Collection
 
 ---
@@ -68,5 +84,10 @@ Each report includes the following:
 
 1. Tourism investment projects received 
 2. Investment projects received & approved
+
+### Annual Arrival All Country 
+
+1. Monthly Arrival for Each Country
+
 
 ---
