@@ -1,5 +1,5 @@
 import pandas as pd
-from arrivals.models import Arrivals
+from touristats.models import AllCountryStats
 
 def insert_arrival_data(year, file_path):
     data = pd.read_csv(file_path)
@@ -13,14 +13,16 @@ def insert_arrival_data(year, file_path):
             # Replace NaN with 0 if conversion failed
             arrival_value = 0 if pd.isna(arrival_value) else arrival_value
             
-            Arrivals.objects.create(
+            AllCountryStats.objects.create(
                 country=row['Country'],
                 year=year,
                 month=month,
-                arrivals=arrival_value
+                passengers=arrival_value
             )
 
 # Example usage
 year = 2020
 file_path = '../data/arrival/all_countries/all_country_arrivals_' + str(year) + '.csv'
 insert_arrival_data(year, file_path)
+
+# AllCountryStats.objects.all().delete()

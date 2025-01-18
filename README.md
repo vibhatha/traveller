@@ -91,3 +91,21 @@ Each report includes the following:
 
 
 ---
+
+## Insert Data
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+## Drop Table or Cleanup
+
+Make sure to delete the everything within `arrivals/migrations` folder except `__init__.py`.
+
+Then, 
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```

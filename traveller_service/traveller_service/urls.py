@@ -17,6 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from touristats import views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('allcountry_arrivals/', views.arrivals_paginated, name='allcountry_arrivals'),
+    path('allcountry_arrivals/<str:country_name>/', views.country_arrivals_view, name='country_arrivals'),
 ]
+
