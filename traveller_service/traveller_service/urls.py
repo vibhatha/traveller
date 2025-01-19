@@ -24,6 +24,7 @@ from touristats import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('allcountry_arrivals/', views.arrivals_paginated, name='allcountry_arrivals'),
-    path('allcountry_arrivals/<str:country_name>/', views.country_arrivals_view, name='country_arrivals'),
+    path('allcountry_arrivals/<str:country_name>/', views.country_arrivals_view, name='country_arrivals_json'),
+    path('allcountry_arrivals/country_arrival_page/', views.country_arrival_page, name='country_arrival_page'),
 ]
 
