@@ -5,13 +5,23 @@ from django.http import JsonResponse
 
 
 def arrivals_paginated(request):
+    print("arrivals_paginated")
     arrivals_list = AllCountryStats.objects.all()
     paginator = Paginator(arrivals_list, 10)  # Show 10 arrivals per page
 
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
+    print(page_obj)
     
     return render(request, 'allcountry_arrivals/index.html', {'page_obj': page_obj})
+
+
+def get_all_arrivals(request):
+    print("get_all_arrivals")
+    arrivals_list = AllCountryStats.objects.all()
+    data = list(arrivals_list.values())
+    print(data)
+    return JsonResponse({'results': data}, safe=False)
 
 
 def country_arrivals_view(request, country_name):

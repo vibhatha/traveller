@@ -21,7 +21,7 @@ def insert_arrival_data(year, file_path):
             )
 
 # Example usage
-year = 2020
+year = 2019
 file_path = '../data/arrival/all_countries/all_country_arrivals_' + str(year) + '.csv'
 insert_arrival_data(year, file_path)
 
