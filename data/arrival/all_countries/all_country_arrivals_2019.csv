@@ -33,7 +33,6 @@ Index,Country,January,February,March,April,May,June,July,August,September,Octobe
 32,CAPE VERDE,0,0,1,0,0,0,0,0,1,2,2,0,6
 33,CHAD,0,0,4,0,0,1,1,0,,0,0,0,6
 34,CHILE,132,204,85,100,33,24,36,29,59,41,65,130,938
-No,Country,January,February,March,April,May,June,July,August,September,October,November,December,Total (Jan - Dec)
 35,CHINA,"26,414","28,039","23,759","14,263","1,589","3,496","6,926","9,503","9,231","11,683","16,312","16,648","167,863"
 36,COLOMBIA,88,68,67,72,33,44,34,36,57,46,58,110,713
 37,COMOROS,20,5,22,11,0,7,22,13,10,5,7,6,128
@@ -69,7 +68,6 @@ No,Country,January,February,March,April,May,June,July,August,September,October,N
 67,GUINEA,0,2,0,1,0,0,1,0,4,2,2,0,12
 68,GUINEA-BISSAU,0,2,0,0,0,0,0,0,1,0,1,0,4
 69,GUYANA,6,1,1,1,0,0,0,0,1,2,0,0,12
-No,Country,January,February,March,April,May,June,July,August,September,October,November,December,Total (Jan - Dec)
 70,HAITI,1,0,1,3,0,0,1,0,0,0,1,2,9
 71,HONDURAS,16,8,4,4,9,4,2,5,2,1,11,10,76
 72,HONG KONG,0,2,0,6,0,1,0,1,0,0,0,1,11
@@ -104,7 +102,6 @@ No,Country,January,February,March,April,May,June,July,August,September,October,N
 101,MADAGASCAR,11,7,3,5,2,6,3,113,42,5,5,5,207
 102,MALAWI,6,0,2,2,0,0,2,0,3,4,10,11,40
 103,MALAYSIA,"1,481","2,070","1,998",995,754,857,"1,026","1,533","1,461","1,248","1,461","1,977","16,861"
-No,Country,January,February,March,April,May,June,July,August,September,October,November,December,Total (Jan - Dec)
 104,MALDIVES,"6,004","4,931","7,802","4,655","1,610","3,350","3,875","4,930","4,304","3,934","5,850","9,033","60,278"
 105,MALI,6,0,5,1,0,0,2,0,1,2,2,0,19
 106,MALTA,105,120,84,53,5,1,39,66,33,24,42,141,713
@@ -140,7 +137,6 @@ No,Country,January,February,March,April,May,June,July,August,September,October,N
 136,PHILIPPINES,"1,244","1,485","1,413","1,308",759,998,"1,102","1,121","1,372","1,285","1,329","1,174","14,590"
 137,POLAND,"3,840","3,302","2,653",914,218,284,763,558,702,805,"3,496","3,361","20,896"
 138,PORTUGAL,452,592,806,673,94,164,243,431,251,312,520,655,"5,193"
-No,Country,January,February,March,April,May,June,July,August,September,October,November,December,Total (Jan - Dec)
 139,QATAR,65,119,115,220,7,32,115,135,31,41,40,143,"1,063"
 140,ROMANIA,891,913,679,444,88,129,167,293,209,225,488,937,"5,463"
 141,RUSSIAN FEDERATION,"13,474","13,008","12,705","3,680",844,711,"1,300","1,332","1,638","5,761","14,537","17,559","86,549"
@@ -176,7 +172,6 @@ No,Country,January,February,March,April,May,June,July,August,September,October,N
 171,TANZANIA,23,19,18,17,10,19,13,481,193,10,26,36,865
 172,THAILAND,938,999,983,762,547,480,569,791,611,853,"1,120","1,208","9,861"
 173,TIMOR-LESTE,9,2,3,0,0,0,2,1,,5,2,1,25
-No,Country,January,February,March,April,May,June,July,August,September,October,November,December,Total (Jan - Dec)
 174,TOGO,0,1,1,0,0,1,1,0,35,0,0,0,39
 175,TONGA,1,0,1,0,0,0,0,2,1,0,2,0,7
 176,TRINIDAD AND TOBAGO,7,5,45,10,1,4,1,3,7,6,9,14,112

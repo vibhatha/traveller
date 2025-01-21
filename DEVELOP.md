@@ -17,6 +17,7 @@ mamba create -n traveller_env python=3.9
 
 ```bash
 mamba install pandas python-dotenv django psycopg2-binary
+pip install tqdm
 ```
 
 ### Login to the Neon PostgreSQL database
@@ -25,6 +26,9 @@ https://console.neon.tech/
 
 
 ## Configuration
+
+Make sure to set the `DATABASE_URL` in the `.env` file.
+Once it is set, then and only then run `python manage.py runserver`.
 
 ```bash
 cp .env.example .env

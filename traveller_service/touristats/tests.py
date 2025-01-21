@@ -54,3 +54,10 @@ class TouristatsViewTest(TestCase):
     def test_touristats_view(self):
         arrivals_list = AllCountryStats.objects.all()
         print(arrivals_list)
+        self.assertEqual(arrivals_list.count(), 1)
+        self.assertEqual(arrivals_list[0].country, "TestCountry")
+        self.assertEqual(arrivals_list[0].year, "2043")
+        self.assertEqual(arrivals_list[0].month, "January")
+        self.assertEqual(arrivals_list[0].passengers, 1)
+
+        
