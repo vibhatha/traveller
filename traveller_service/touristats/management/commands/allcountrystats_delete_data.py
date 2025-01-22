@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
-from touristats.models import TimeFrame, AllCountryStats
+
+from touristats.models import AllCountryStats, TimeFrame
 
 
 class Command(BaseCommand):
@@ -29,24 +30,22 @@ class Command(BaseCommand):
     Returns:
         None. Prints success or cancellation message to stdout.
     """
-    help = 'Delete all data from AllCountryStats and related TimeFrames'
+
+    help = "Delete all data from AllCountryStats and related TimeFrames"
 
     def add_arguments(self, parser):
         parser.add_argument(
-            '--year',
-            type=int,
-            help='Specific year to delete data from (optional)',
-            required=False
+            "--year", type=int, help="Specific year to delete data from (optional)", required=False
         )
         parser.add_argument(
-            '--confirm',
-            action='store_true',
-            help='Confirm deletion without prompting',
+            "--confirm",
+            action="store_true",
+            help="Confirm deletion without prompting",
         )
 
     def handle(self, *args, **options):
-        year = options.get('year')
-        confirm = options.get('confirm')
+        year = options.get("year")
+        confirm = options.get("confirm")
 
         if year:
             message = f"This will delete all data for year {year}"
@@ -63,7 +62,7 @@ class Command(BaseCommand):
         if not confirm:
             self.stdout.write(message)
             user_input = input("Are you sure you want to proceed? (yes/no): ")
-            if user_input.lower() != 'yes':
+            if user_input.lower() != "yes":
                 self.stdout.write(self.style.WARNING("Operation cancelled."))
                 return
 
@@ -76,6 +75,4 @@ class Command(BaseCommand):
         else:
             TimeFrame.objects.filter(allcountrystats__isnull=True).delete()
 
-        self.stdout.write(
-            self.style.SUCCESS(f"Successfully deleted {count} records!")
-        )
+        self.stdout.write(self.style.SUCCESS(f"Successfully deleted {count} records!"))

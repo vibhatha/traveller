@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"  # Build backend to use
 
 [project]
 # Project metadata
-name = "traveller"  # The name of your project
+name = "traveller_service"  # The name of your project
 version = "0.1.0"  # Project version
 description = "A Python project for tracing tourism data."  # Short description
 readme = "README.md"  # Path to the README file
@@ -37,7 +37,7 @@ classifiers = [
 dependencies = [
   "numpy>=2.0.0",
   "pandas>=2.2.3",
-  "pyarrow>=18.1.0"
+  "pyarrow>=18.1.0",
 ]
 
 # Optional dependencies for specific use cases
@@ -57,3 +57,28 @@ traveller = "traveller.cli:cli"
 [tool.setuptools]
 packages = { find = {} }
 include-package-data = true
+
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = '''
+# A regex preceded with ^/ will apply only to files and directories
+# in the root of the project.
+^/docs
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip = []
+
+[tool.autopep8]
+max_line_length = 100
+aggressive = 3

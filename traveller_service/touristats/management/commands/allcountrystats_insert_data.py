@@ -1,8 +1,11 @@
-from django.core.management.base import BaseCommand
-from touristats.models import TimeFrame, AllCountryStats
-import pandas as pd
-from tqdm import tqdm
 import sys
+
+import pandas as pd
+from django.core.management.base import BaseCommand
+from tqdm import tqdm
+
+from touristats.models import AllCountryStats, TimeFrame
+
 
 class Command(BaseCommand):
     """Insert tourist arrival statistics from CSV file into the database.
@@ -38,47 +41,61 @@ class Command(BaseCommand):
         ValueError: If the CSV format is invalid or required columns are missing
     """
 
-    help = 'Insert AllCountryStats data from CSV'
+    help = "Insert AllCountryStats data from CSV"
 
     def add_arguments(self, parser):
-        parser.add_argument('year', type=int)
-        parser.add_argument('file_path', type=str)
+        parser.add_argument("year", type=int)
+        parser.add_argument("file_path", type=str)
 
     def handle(self, *args, **options):
-        year = options['year']
-        file_path = options['file_path']
-        
+        year = options["year"]
+        file_path = options["file_path"]
+
         data = pd.read_csv(file_path)
         total_rows = len(data)
-        
+
         self.stdout.write(f"Starting import for {total_rows} countries...")
-        
+
         # Create progress bar for countries
         for index, row in tqdm(data.iterrows(), total=total_rows, desc="Importing data"):
-            country_name = row['Country']
+            country_name = row["Country"]
             sys.stdout.write(f"\rProcessing {country_name} ({index + 1}/{total_rows})")
             sys.stdout.flush()
-            
-            for month_num, month in enumerate(['January', 'February', 'March', 'April', 'May', 'June', 
-                          'July', 'August', 'September', 'October', 'November', 'December'], 1):
-                arrival_value = pd.to_numeric(str(row[month]).replace(',', ''), errors='coerce')
+
+            for month_num, month in enumerate(
+                [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December",
+                ],
+                1,
+            ):
+                arrival_value = pd.to_numeric(str(row[month]).replace(",", ""), errors="coerce")
                 arrival_value = 0 if pd.isna(arrival_value) else arrival_value
-                
-                timeframe, _ = TimeFrame.objects.get_or_create(
-                    year=year,
-                    month=month_num
-                )
-                
+
+                timeframe, _ = TimeFrame.objects.get_or_create(year=year, month=month_num)
+
                 AllCountryStats.objects.create(
                     timeframe=timeframe,
                     country=country_name,
                     passengers=arrival_value,
                     days_of_stay=0,
-                    purpose_of_visit='Not Specified'
+                    purpose_of_visit="Not Specified",
                 )
 
         # Add a newline at the end
-        sys.stdout.write('\n')
-        self.stdout.write(self.style.SUCCESS(
-            f'Successfully imported data for {total_rows} countries in year {year}'
-        ))
+        sys.stdout.write("\n")
+        self.stdout.write(
+            self.style.SUCCESS(
+                f"Successfully imported data for {total_rows} countries in year {year}"
+            )
+        )

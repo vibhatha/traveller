@@ -172,3 +172,8 @@ cython_debug/
 
 # Django 
 traveller_service/traveller_service/.env
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride

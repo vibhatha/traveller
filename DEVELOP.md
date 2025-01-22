@@ -18,6 +18,8 @@ mamba create -n traveller_env python=3.9
 ```bash
 mamba install pandas python-dotenv django psycopg2-binary
 pip install tqdm
+pip install black
+pip install pre-commit
 ```
 
 ### Login to the Neon PostgreSQL database
@@ -124,4 +126,18 @@ Then,
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
+
+
+## Code Formatting
+
+```bash
+# Fix a specific file
+autopep8 --in-place --aggressive --aggressive touristats/models.py
+
+# Fix all Python files in a directory
+autopep8 --in-place --aggressive --aggressive --recursive .
+
+# Remove unused imports and variables
+autoflake --in-place --remove-all-unused-imports --recursive .
 ```

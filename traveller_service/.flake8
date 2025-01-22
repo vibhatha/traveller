@@ -1,0 +1,16 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503
+exclude = 
+    .git,
+    __pycache__,
+    build,
+    dist,
+    *.pyc,
+    *.egg-info,
+    .eggs,
+    migrations,
+    settings.py
+per-file-ignores =
+    # imported but unused in __init__.py
+    __init__.py:F401
