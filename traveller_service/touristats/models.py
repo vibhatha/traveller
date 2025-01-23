@@ -115,6 +115,13 @@ class TourismAccomodationInvestment(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 22 2025",
+)
 class RoomDistribution(models.Model):
     """
     Per District the number of rooms and projects.
@@ -151,6 +158,13 @@ class UnmanagedModel(models.Model):
         managed = False
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 22 2025",
+)
 class AccomodationTypeDistribution(UnmanagedModel):
     """
     NOTE: THIS CAN BE INFERRED BY AccomodationCategorization ENTITY.
@@ -179,6 +193,13 @@ class AccomodationTypeDistribution(UnmanagedModel):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 22 2025",
+)
 class RoomQualityDistribution(models.Model):
     """
     Distribution of the quality of rooms used by tourists.
