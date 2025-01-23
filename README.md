@@ -15,13 +15,13 @@ Tourism data collection contains the following major components:
 7. People
 8. Misc Services (e.g. Spa, Water Sports, etc.)
 
-### Transport
+### Transport 
 
 1. Air Connectivity
 2. Primary Final Ports (Prior to Arrival in Sri Lanka)
 
 
-### Accommodation
+### Accommodation (Verified)
 
 1. Accomodation Categories
 2. Room Distribution 
@@ -31,7 +31,7 @@ Tourism data collection contains the following major components:
 
 ### Investment
 
-1. Touris Accomodation Investment 
+1. Tourism Accomodation Investment 
 2. Tourism General Investment 
 
 ### Revenue
