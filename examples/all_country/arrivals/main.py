@@ -1,5 +1,4 @@
 from traveller.data.loader import DataLoader
-import pandas as pd
 from traveller.data.trend_analyzer import MonthlyTrendAnalyzer
 from traveller.plot.plotter import TrendPlotter
 
@@ -16,4 +15,12 @@ if data is not None:
     trend = monthly_trend_analyzer.analyze_trend(2019)
 
     trend_plotter = TrendPlotter()
-    trend_plotter.plot_trend(trend, 'Month', 'Arrivals', 'Monthly Tourist Arrivals by Country', 'Month', 'Arrivals', 'Year')
+    trend_plotter.plot_trend(
+        trend,
+        "Month",
+        "Arrivals",
+        "Monthly Tourist Arrivals by Country",
+        "Month",
+        "Arrivals",
+        "Year",
+    )

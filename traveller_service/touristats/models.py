@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
-
 from touristats.utils.model_util import verified_model
 
 
@@ -86,7 +85,23 @@ class AccomodationCategorization(models.Model):
     """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class RegisteredRestaurants(models.Model):
+    """
+    Registered Restaurants
+
+    Example:
+    --------
+    2018 Q1 Report on: Year in Review
+    Geographical Distribution of SLTDA Registered Restaurants
+    """
+
     restaurant_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     district = models.CharField(max_length=100)
@@ -96,7 +111,28 @@ class RegisteredRestaurants(models.Model):
         return f"District: {self.district}, Establishments: {self.establishments}"
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class TourismAccomodationInvestment(models.Model):
+    """
+    Tourism Accomodation Investment
+
+    Example:
+    --------
+
+    2018 Q1 Report on: Year in Review
+    Page 5: TOURISM ACCOMMODATION INVESTMENTS
+
+    2023 Report on: Year in Review
+        Number of investment projects received and approved
+            Table: 19 Investment projects received and approved
+    """
+
     investment_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     status = models.CharField(max_length=100)
@@ -227,6 +263,13 @@ class RoomQualityDistribution(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class FoodQualityDistribution(models.Model):
     """
     Distribution of the quality of food used by tourists.
@@ -265,7 +308,23 @@ class ServiceQualityDistribution(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class AirConnectivityDistribution(models.Model):
+    """
+    Distribution of the air connectivity of tourists.
+
+    Example:
+    --------
+    2024 Report on: Year in Review
+    Page 24: Contribution of Airlines on tourist arrivals to Sri Lanka
+    """
+
     air_connectivity_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     airline = models.CharField(max_length=100)
@@ -281,7 +340,23 @@ class AirConnectivityDistribution(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class PrimaryFinalPortOfDeparture(models.Model):
+    """
+    Distribution of the primary final port of departure of tourists.
+
+    Example:
+    --------
+    2023 Report on : Year in Review
+    Table 14: Main final departure airports to Sri Lanka
+    """
+
     route_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     rank = models.IntegerField()
@@ -323,6 +398,7 @@ class DistributionOfTourismServices(models.Model):
     service_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     service = models.CharField(max_length=100)
+    service_type = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
     percentage = models.FloatField()
 
@@ -331,11 +407,32 @@ class DistributionOfTourismServices(models.Model):
         Year: {self.timeframe.year},
         Service: {self.service},
         District: {self.district},
+        Service Type: {self.service_type},
         Percentage: {self.percentage} %
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class TourismIncome(models.Model):
+    """
+    Tourism Income
+
+    Example:
+    --------
+    2024 Report on: Year in Review
+    Table 7 : Tourism income
+
+    2023 Report on: Year in Review
+    Page 33: Tourism income
+
+    """
+
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     number_of_tourists = models.IntegerField()
     average_expenditure_month = models.FloatField()
@@ -353,7 +450,91 @@ class TourismIncome(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
+class Attraction(models.Model):
+    """
+    Attraction: Tourist attractions.
+
+    Example:
+    --------
+    2023 Report on: Year in Review
+    Table: 13 Distribution of other tourism services by districts
+    """
+
+    attraction_id = models.CharField(max_length=100, primary_key=True)
+    timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
+    location = models.CharField(max_length=100)
+    location_type = models.CharField(max_length=100)
+    district = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f"""
+        Year: {self.timeframe.year},
+        Location: {self.location},
+        Location Type: {self.location_type},
+        District: {self.district}
+        """
+
+
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
+class TourismIncomeClassification(models.Model):
+    """
+    Tourism Income Classification by Attraction
+
+    Example:
+    --------
+    2024 Report on: Year in Review
+    Table 7 : Tourism income
+    """
+
+    income_classification_id = models.CharField(max_length=100, primary_key=True)
+    timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
+    attraction = models.ForeignKey(Attraction, on_delete=models.CASCADE)
+    local_revenue = models.FloatField()
+    foreign_revenue = models.FloatField()
+    number_of_local_visitors = models.IntegerField()
+    number_of_foreign_visitors = models.IntegerField()
+
+    def __str__(self):
+        return f"""
+        Year: {self.timeframe.year},
+        Attraction: {self.attraction},
+        Local Revenue: {self.local_revenue},
+        Foreign Revenue: {self.foreign_revenue},
+        Number of Local Visitors: {self.number_of_local_visitors},
+        Number of Foreign Visitors: {self.number_of_foreign_visitors}
+        """
+
+
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class AgeCategoryDistribution(models.Model):
+    """
+    Age Category Distribution
+
+    Example:
+    --------
+    2023 Report on: Year in Review
+    Table: 02: Tourist arrivals by age category, 2023
+    """
+
     age_category_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
     age_category = models.CharField(max_length=100)
@@ -364,28 +545,6 @@ class AgeCategoryDistribution(models.Model):
         Year: {self.timeframe.year},
         Age Category: {self.age_category},
         Percentage: {self.percentage} %
-        """
-
-
-class AttractionTypeDistribution(models.Model):
-    attraction_type_id = models.CharField(max_length=100, primary_key=True)
-    timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
-    location = models.CharField(max_length=100)
-    location_type = models.CharField(max_length=100)
-    number_of_foreign_visitors = models.IntegerField()
-    number_of_local_visitors = models.IntegerField()
-    local_visitor_income = models.FloatField()
-    foreign_visitor_income = models.FloatField()
-
-    def __str__(self):
-        return f"""
-        Year: {self.timeframe.year},
-        Location: {self.location},
-        Location Type: {self.location_type},
-        Number of Foreign Visitors: {self.number_of_foreign_visitors},
-        Number of Local Visitors: {self.number_of_local_visitors},
-        Local Visitor Income: {self.local_visitor_income},
-        Foreign Visitor Income: {self.foreign_visitor_income}
         """
 
 
@@ -438,15 +597,30 @@ class CategoryDistribution(models.Model):
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class TourismInvestment(models.Model):
+    """
+    Tourism Investment
+
+    Example:
+    --------
+    2023 Report on: Year in Review
+    Table 18: Investment Projects received since 2010 to 31st December 2023
+    """
+
     investment_id = models.CharField(max_length=100, primary_key=True)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
+    district = models.CharField(max_length=100)
     status = models.CharField(max_length=100)
     number_of_projects = models.IntegerField()
     number_of_rooms = models.IntegerField()
     total_investment = models.DecimalField(max_digits=15, decimal_places=2)
-    foreign_investment = models.DecimalField(max_digits=15, decimal_places=2)
-    local_investment = models.DecimalField(max_digits=15, decimal_places=2)
 
     def __str__(self):
         return f"""
@@ -455,22 +629,33 @@ class TourismInvestment(models.Model):
         Number of Projects: {self.number_of_projects},
         Number of Rooms: {self.number_of_rooms},
         Total Investment: {self.total_investment},
-        Foreign Investment: {self.foreign_investment},
-        Local Investment: {self.local_investment}
         """
 
 
+@verified_model(
+    version="1.0",
+    description="Initial version of the model",
+    verified_by="Vibhatha",
+    data_source="SLTDA",
+    date="Jan 24 2025",
+)
 class AttractionStats(models.Model):
-    attraction_id = models.CharField(max_length=100, primary_key=True)
+    """
+    Attraction Stats
+
+    Example:
+    --------
+    2023 Report on: Year in Review
+    Table:15 Visitors to wildlife parks, 2024 and the following.
+    """
+
+    attraction_id = models.ForeignKey(Attraction, on_delete=models.CASCADE)
     timeframe = models.ForeignKey(TimeFrame, on_delete=models.CASCADE)
-    location = models.CharField(max_length=100)
-    location_type = models.CharField(max_length=100)
     visitors = models.JSONField(default=dict)  # Store visitor counts and income in JSON
 
     def __str__(self):
         return f"""
         Year: {self.timeframe.year},
-        Location: {self.location},
-        Location Type: {self.location_type},
+        Attraction: {self.attraction_id},
         Visitors: {self.visitors}
         """

@@ -1,5 +1,5 @@
 import pyarrow.csv as pv
-import pyarrow as pa
+
 
 class DataLoader:
     def __init__(self, file_path):

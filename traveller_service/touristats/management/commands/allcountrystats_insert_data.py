@@ -2,9 +2,8 @@ import sys
 
 import pandas as pd
 from django.core.management.base import BaseCommand
-from tqdm import tqdm
-
 from touristats.models import AllCountryStats, TimeFrame
+from tqdm import tqdm
 
 
 class Command(BaseCommand):
