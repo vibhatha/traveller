@@ -4,7 +4,7 @@ Traveller is a navigation on tourism related aspects of Sri Lanka.
 
 ## Nature of Data
 
-The data is collected from reports that have been published by the Sri Lanka Tourism Development Authority (SLTDA).
+The data is collected from reports that have been published by the Sri Lanka Tourism Development Authority (SLTDA). It consists of a variety of data that have been collected. The reports are given in both annual and quarterly formats. Each data set will give a summarised view of the tourism data. 
 
 Tourism data collection contains the following major components:
 
