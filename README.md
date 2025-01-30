@@ -19,13 +19,13 @@ Tourism data collection contains the following major components:
 
 ### Transport 
 
-1. Air Connectivity
-2. Primary Final Ports (Prior to Arrival in Sri Lanka)
+1. Air Connectivity - month : Integar, year : Integar, airline : CharField, number_of_passengers : Integar, percentage : FloatField 
+2. Primary Final Ports (Prior to Arrival in Sri Lanka) - month : Integar, year : Integar, route_id : CharField, rank : Integar, port_of_departure : CharField, number_of_passengers : Integar, destination : CharField, percentage : FloatField 
 
 
 ### Accommodation (Verified)
 
-1. Accomodation Categories
+1. Accomodation Categories - month : Integar, year : Integar, country : CharField, categorization : CharField, establishments : Integar, rooms : Integar 
 2. Room Distribution 
 3. Accomodation Type Distribution 
 4. Room Quality Distribution 
