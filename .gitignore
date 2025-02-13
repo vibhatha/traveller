@@ -177,3 +177,4 @@ traveller_service/traveller_service/.env
 .DS_Store
 .AppleDouble
 .LSOverride
+data/.DS_Store

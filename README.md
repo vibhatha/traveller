@@ -33,31 +33,31 @@ Tourism data collection contains the following major components:
 
 ### Investment
 
-1. Tourism Accomodation Investment 
-2. Tourism General Investment 
+1. Tourism Accomodation Investment - month : Integar, year : Integar, status : CharField, number_of_projects : Integar, number_of_rooms : Integar, total_investment : Integar, foreign_investment : Integar, local_investment : Integar 
+2. Tourism General Investment - month : Integar, year : Integar, district : CharField, status : CharField, number_of_projects : Integar, number_of_rooms : Integar, total_investment : Integar, foreign_investment : Integar, local_investment : Integar 
 
 ### Revenue
 
-1. Tourism Revenue
+1. Tourism Revenue - 
 
 ### Food
 
-1. Registered Restaurants
-2. Food Quality Distribution
+1. Registered Restaurants - month : Integar, year : Integar, restaurant_id : CharField, district : CharField, establishments : Integar 
+2. Food Quality Distribution - month : Integar, year : Integar, food_quality_id : CharField, food_quality : CharField, percentage : FloatField 
 
 ### Location/Sites
 
-1. Attraction Types
-2. Attraction Statistics 
+1. Attraction Types - 
+2. Attraction Statistics - month : Integar, year : Integar, attraction_id : CharField, visitors : JSONField 
 
 ### People
 
-1. Arrival Statistics
+1. Arrival Statistics 
 2. Age Statistics
 
 ### Misc Services
 
-1. Distribution of other tourism services
+1. Distribution of other tourism services - 
 
 ## Development
 
