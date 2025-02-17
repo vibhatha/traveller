@@ -62,3 +62,9 @@ Tourism data collection contains the following major components:
 ## Development
 
 See [DEVELOP.md](DEVELOP.md)
+
+
+### data entry specification 
+
+1. If data is unknown - None 
+2. If data is not applicable - NA
