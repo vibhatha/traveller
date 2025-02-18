@@ -1,0 +1,38 @@
+year,month,status,num_of_projects,num_of_rooms,total_investment,foreign_investment,local_investment
+2018,3,Under construction,113,7261,none,1014.7,none
+2018,3,Projects in operation,161,8932,none,1651.1,none
+2018,3,Projects not yet started,42,1798,none,204.0,none
+2018,6,Under construction,115,7460,none,1044.2,none
+2018,6,Projects in operation,171,9143,none,1640.0,none
+2018,6,Projects not yet started,40,1761,none,181.6,none
+2018,9,Under construction,113,7053,none,977.5,none
+2018,9,Projects in operation,182,9656,none,1739.7,none
+2018,9,Projects not yet started,42,1787,none,182.9,none
+2018,12,Projects in operation,193,9903,none,1754.5,none
+2018,12,Under construction,103,6815,none,962.7,none
+2018,12,Projects not yet started,54,2042,none,237.5,none
+2019,3,Under construction,113,6919,none,968.92,none
+2019,3,Projects not yet started,53,1957,none,225.74,none
+2019,3,Projects in operation,200,10071,none,1763.00,none
+2019,6,Construction in progress,107,6797,none,957.998,none
+2019,6,Not yet started,68,2210,none,248.97,none
+2019,6,In Operation,207,10211,none,1774.00,none
+2019,9,Construction in progress,107,6797,none,957.998,none
+2019,9,Not yet started,68,2210,none,248.97,none
+2019,9,In Operation,207,10211,none,1774.00,none
+2019,12,Construction in Progress,110,6966,none,975.05,none
+2019,12,Not Yet Started,76,3523,none,1020.91,none
+2019,12,In Operation,221,10462,none,1785.59,none
+2020,12,Construction in Progress,88,6560,none,702.9,none
+2020,12,Not Yet Started,113,3970,none,1059.13,none
+2020,12,In Operation,226,10690,none,1975.59,none
+2021,12,Construction in Progress,80,6093,none,1324.28,none
+2021,12,Not Yet Started,113,3560,none,407,none
+2021,12,In Operation,239,11826,none,2048.98,none
+2021,12,Closed/On Hold,25,688,none,67.95,none
+2022,12,Number of projects received,1053,46250,none,8279.451,none
+2022,12,Final Approvals issued,479,22794,none,3972.190,none
+2023,12,Recieved projects,68,1950,none,237.702,none
+2023,12,Approved projects,34,1273,none,170.126,none
+2024,12,Recieved projects,26,506,none,33.312,none
+2024,12,Approved projects,15,224,none,16.929,none
