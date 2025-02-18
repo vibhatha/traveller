@@ -1,0 +1,224 @@
+year,month,categorization,num_establishments,num_rooms
+2018,3,Classified Tourist Hotels,141,12828 
+2018,3,Five stars 20 4,217 
+2018,3,Four Star 19 2,149 
+2018,3,Three Star 25 2,957 
+2018,3,Two Star 37 1,738 
+2018,3,One Star 40 1,767 
+2018,3,Tourist Hotels (Unclassified),229,9962 
+2018,3,Boutique Hotel,28,564 
+2018,3,Boutique Villa,37,242     
+2018,3,Guest House,895,9708       
+2018,3,Bungalow,348,1462 
+2018,3,Heritage Bungalow,4,19 
+2018,3,Heritage Home,2,8 
+2018,3,Home Stay Unit,378,1138 
+2018,3,Rented Apartment,63,183 
+2018,3,Rented Home,6,19
+2018,6,Classified Tourist Hotels 136 12,822 
+2018,6,Five Star,22,4950 
+2018,6,Four Star,19,2112 
+2018,6,Three Star,23,2364 
+2018,6,Two Star,35,1680 
+2018,6,One Star,37,1716 
+2018,6,Tourist Hotels (Unclassified),230,9952 
+2018,6,Boutique Hotels,28,564 
+2018,6,Boutique Villas,38,251 
+2018,6,Guest Houses,904,9845 
+2018,6,Bungalows,354,1491 
+2018,6,Heritage Bungalows,4,19 
+2018,6,Heritage Homes,2,8 
+2018,6,Home Stay Units,395,1194 
+2018,6,Rented Apartments,67,216 
+2018,6,Rented Homes,6,19
+2018,9,Classified Tourist Hotels,138,13079 
+2018,9,Five Star,22,4950 
+2018,9,Four Star,21,2369 
+2018,9,Three Star23,2364 
+2018,9,Two Star,35,1680 
+2018,9,One Star,37,1716 
+2018,9,Tourist Hotel (Unclassified),229,9756 
+2018,9,Boutique Hotel,29,574 
+2018,9,Boutique Villa,39,256 
+2018,9,Guest House,914,9953 
+2018,9,Bungalow,372,1554 
+2018,9,Heritage Bungalow,4,19 
+2018,9,Heritage Home,2,8 
+2018,9,Home Stay Unit,415,1259 
+2018,9,Rented Apartment,67,216 
+2018,9,Rented Home,6,19
+2018,12,Classified Tourist Hotels,145,13408 
+2018,12,Five Star,23,5150 
+2018,12,Four Star,21,2302 
+2018,12,Three Star,24,2416 
+2018,12,Two Star,38,1788 
+2018,12,One Star,39,1752 
+2018,12,Tourist Hotel (Unclassified),241,10456 
+2018,12,Boutique Hotel,31,628 
+2018,12,Boutique Villa,40,265 
+2018,12,Guest House,936,10218 
+2018,12,Bungalow,395,1633 
+2018,12,Heritage Bungalow,4,19 
+2018,12,Heritage Home,3,9 
+2018,12,Home Stay Unit,442,1337 
+2018,12,Rented Apartment,69,222 
+2018,12,Rented Home,6,19
+2019,3,Classified Tourist Hotels,147,13544 
+2019,3,Five star,23,5150 
+2019,3,Four Star,23,2438 
+2019,3,Three Star,24,2416 
+2019,3,Two Star,39,1878 
+2019,3,One Star,38,1662 
+2019,3,Tourist Hotel (Unclassified),242,10446 
+2019,3,Boutique Hotel,32,638 
+2019,3,Boutique Villa,40,265 
+2019,3,Guest House,969,10594 
+2019,3,Bungalow,412,1701 
+2019,3,Heritage Bungalow,4,19 
+2019,3,Heritage Home,3,9 
+2019,3,Home Stay Unit,476,1434 
+2019,3,Hostels,2,16 
+2019,3,Rented Apartment,70,223 
+2019,3,Rented Home,6,19
+2019,6,Classified Tourist Hotels,149,13720 
+2019,6,Five star,23,5150 
+2019,6,Four Star,25,2614 
+2019,6,Three Star,24,2416 
+2019,6,Two Star,39,1878 
+2019,6,One Star,38,1662 
+2019,6,Tourist Hotel (Unclassified),243,10463 
+2019,6,Boutique Hotel,34,680 
+2019,6,Boutique Villa,41,272 
+2019,6,Guest House,993,10837 
+2019,6,Bungalow,424,1746 
+2019,6,Heritage Bungalow,4,19 
+2019,6,Heritage Home,3,9 
+2019,6,Home Stay Unit,497,1502 
+2019,6,Hostels,4,31 
+2019,6,Rented Apartment,71,227 
+2019,6,Rented Home,6,19
+2019,9,Classified Tourist Hotels,138,13079 
+2019,9,Five Star,22,4950 
+2019,9,Four Star,21,2369 
+2019,9,Three Star,23,2364 
+2019,9,Two Star,35,1680 
+2019,9,One Star,37,1716 
+2019,9,Tourist Hotel (Unclassified),229,9756 
+2019,9,Boutique Hotel,29,574 
+2019,9,Boutique Villa,39,256 
+2019,9,Guest House,914,9953 
+2019,9,Bungalow,372,1554 
+2019,9,Heritage Bungalow,4,19 
+2019,9,Heritage Home,2,8 
+2019,9,Home Stay Unit,415,1259 
+2019,9,Rented Apartment,67,216 
+2019,9,Rented Home,6,19
+2019,12,Boutique Hotel,36,722
+2019,12,Boutique Villa,46,326
+2019,12,Bungalow,460,1862
+2019,12,Classified Tourist Hotels,155,14093
+2019,12,Five star,26,5354  
+2019,12,Four Star,24,2564  
+2019,12,Three Star,26,2513  
+2019,12,Two Star,41,2000  
+2019,12,One Star,38,1662  
+2019,12,Guest House,1050,11661
+2019,12,Heritage Bungalow,4,19
+2019,12,Heritage Home,3,9
+2019,12,Home Stay Unit,548,1672
+2019,12,Hostels,10,125
+2019,12,Rented Apartment,70,226
+2019,12,Rented Home,5,14
+2019,12,Tourist Hotel (Unclassified),233,9636
+2020,12,Boutique Hotel,37,732
+2020,12,Boutique Villa,45,315
+2020,12,Bungalow,533,2146 
+2020,12,Classified Tourist Hotels,156,14232 
+2020,12,Five star,25,5354 
+2020,12,Four Star,24,2564
+2020,12,Three Star,26,2513
+2020,12,Two Star,42,2090
+2020,12,One Star,39,1711
+2020,12,Guest House,1125,12553 
+2020,12,Heritage Bungalow,4,19 
+2020,12,Heritage Home,3,9
+2020,12,Home Stay Unit,776,2236
+2020,12,Hostels,10,109
+2020,12,Rented Apartment,77,253
+2020,12,Rented Home,7,18
+2020,12,Tourist Hotel (Unclassified),246,10128 
+2021,12,Boutique Hotel,40,845
+2021,12,Boutique Villa,46,325
+2021,12,Bungalow,772,3118
+2021,12,Classified Tourist Hotels,159,14717
+2021,12,Five star,27,5630
+2021,12,Four Star,27,2914
+2021,12,Three Star,25,2394
+2021,12,Two Star,41,2068
+2021,12,One Star,39,1711
+2021,12,Guest House,1328,14842
+2021,12,Heritage Bungalow,4,19
+2021,12,Heritage Home,3,9
+2021,12,Home Stay Unit,965,2908
+2021,12,Hostels,11,133 
+2021,12,Rented Apartment,83,314
+2021,12,Rented Home,10,36
+2021,12,Tourist Hotel (Unclassified),235,10071 
+2022,12,Boutique Hotel,40,845
+2022,12,Boutique Villa,49,346
+2022,12,Bungalow,857,3513
+2022,12,Classified Tourist Hotels,156,15080
+2022,12,Five Star,28,5931
+2022,12,Four Star,28,3110
+2022,12,Three Star,26,2449
+2022,12,Two Star,37,1903
+2022,12,One Star,37,1687
+2022,12,Guest House,1380,15438
+2022,12,Heritage Bungalow,4,19
+2022,12,Heritage Home,3,9
+2022,12,Home Stay Unit,1009,3049
+2022,12,Hostels,11,133
+2022,12,Rented Apartment,85,323
+2022,12,Rented Home,10,28
+2022,12,Themed Accommodation,1,11
+2022,12,Tourist Hotel (Unclassified),224,9326
+2023,12,Boutique Hotel,41,865
+2023,12,Boutique Villa,51,356
+2023,12,Bungalow,984,4078
+2023,12,Classified Tourist Hotel,168,16686
+2023,12,1 Star,41,1852
+2023,12,2 Star,41,2499
+2023,12,3 Star,26,2462
+2023,12,4 Star,30,3590
+2023,12,5 Star,30,6283
+2023,12,Guest House,1679,18622
+2023,12,Eco lodge,1,20
+2023,12,Heritage Bungalow,4,19
+2023,12,Heritage Home,2,2
+2023,12,Heritage Hotel,2,312
+2023,12,Home Stay Unit,1080,3231
+2023,12,Hostels,12,143
+2023,12,Rented Apartment,86,328
+2023,12,Rented Home,14,41
+2023,12,Themed Accommodation & Value-added Activities,1,11
+2023,12,Tourist Hotel,221,8515
+2024,6,Boutique Hotel,38,835
+2024,6,Boutique Villa,49,345
+2024,6,Bungalow,1052,4390
+2024,6,Classified Tourist Hotel,167,16808
+2024,6,1 Star,41,1852
+2024,6,2 Star,40,2431
+2024,6,3 Star,25,2408
+2024,6,4 Star,31,3834
+2024,6,5 Star,30,6283
+2024,6,Guest House,1647,18445
+2024,6,Eco lodge,1,20
+2024,6,Heritage Bungalow,4,19
+2024,6,Heritage Home,2,2
+2024,6,Heritage Hotel,2,312
+2024,6,Home Stay Unit,1112,3308
+2024,6,Hostels,14,158
+2024,6,Rented Apartment,82,322
+2024,6,Rented Home,15,41
+2024,6,Themed Accommodation & Value-added Activities,1,11
+2024,6,Tourist Hotel,204,8362
